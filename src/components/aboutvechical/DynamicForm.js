@@ -30,6 +30,9 @@ function DynamicForm({handleNext,handleBack}) {
       console.log(response.json());
     })
   }
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
 
   const loadVehicleDetails = async () => {
     dispatch(showLoader());

@@ -7,6 +7,8 @@ import FormLayout from './FormLayout';
 import { FormContext } from './FormContext';
 import FileUpload from './FileUpload';
 
+import CheckAddDriver from './checkdrivers';
+
 function AboutPolicyHolder({handleNext,handleBack}) {
     let verify=true;
   const [personal_details_elements, setPersonal_details_elements] = useState(formJSON[0]);
@@ -302,6 +304,7 @@ function AboutPolicyHolder({handleNext,handleBack}) {
           Back
           </Button>
       </Form>
+     <CheckAddDriver></CheckAddDriver>
     </FormContext.Provider>
   );
 }
